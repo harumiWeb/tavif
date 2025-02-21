@@ -76,7 +76,7 @@ enum ExtensionType {
 }
 
 impl ExtensionType {
-    fn get_extension_str(&self) -> &str {
+    fn get_extension_str(&self) -> &'static str {
         match self {
             ExtensionType::Webp => "webp",
             ExtensionType::Avif => "avif",
